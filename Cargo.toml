@@ -9,9 +9,12 @@ edition = "2021"
 anyhow = "1.0.79"
 chrono = { version = "0.4.34", features = ["pure-rust-locales"] }
 clap = { version = "4.5.0", features = ["derive", "wrap_help", "unicode"] }
+crossterm = "0.27.0"
 env_logger = "0.11.1"
 inquire = { version = "0.6.2", features = ["date"] }
 log = "0.4.20"
+ratatui = { version = "0.26.0", features = ["widget-calendar"] }
 slug = "0.1.5"
 tempfile = "3.10.0"
+tui-textarea = "0.4.0"
 walkdir = "2.4.0"

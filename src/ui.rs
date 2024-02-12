@@ -6,8 +6,10 @@ use clap::{arg, Args, Parser};
 use crate::models;
 
 mod cli;
+mod tui;
 
 pub(crate) use self::cli::CLIPostUI;
+pub(crate) use self::tui::TUIPostUI;
 
 #[derive(Parser)]
 #[command(version, about, long_about = None)]

@@ -22,7 +22,7 @@ fn main() {
 
     let ui_result = match UIType::from(cli.ui_group) {
         UIType::CLI => ui::CLIPostUI::run(&data_store, &mut model),
-        UIType::TUI => Ok(()),
+        UIType::TUI => ui::TUIPostUI::run(&data_store, &mut model),
     };
     match ui_result {
         Ok(_) => return (),
